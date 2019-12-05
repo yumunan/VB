@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: /VB
+  - source: /
     destination: /home/ec2-user/server/web
 permissions:
   - object: /
