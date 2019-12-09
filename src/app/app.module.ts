@@ -12,6 +12,8 @@ import { PrelopinputComponent } from './prelopinput/prelopinput.component';
 import { PrelopconfirmComponent } from './prelopconfirm/prelopconfirm.component';
 import { PrelopsuccessComponent } from './prelopsuccess/prelopsuccess.component';
 
+import { HttpClientModule } from "@angular/common/http";
+
 const routes: Routes = [{
   path: "", redirectTo: "prelophome", pathMatch: "full"
 }, {
@@ -38,7 +40,8 @@ const routes: Routes = [{
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
