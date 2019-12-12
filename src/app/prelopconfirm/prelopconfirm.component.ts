@@ -14,7 +14,7 @@ export class PrelopconfirmComponent implements OnInit {
   }
 
   complete() {
-    this.router.navigateByUrl('/prelophome/prelopsuccess');
+    this.router.navigate(['/prelophome/prelopsuccess'], { skipLocationChange: true });
   }
 
 }

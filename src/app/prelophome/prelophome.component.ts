@@ -25,7 +25,7 @@ export class PrelophomeComponent implements OnInit {
   }
 
   getThisLoan() {
-    this.router.navigateByUrl('/prelophome/prelopinput');
+    this.router.navigate(['/prelophome/prelopinput'], { skipLocationChange: true });
   }
 
 }
